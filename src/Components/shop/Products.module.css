@@ -1,12 +1,14 @@
 .flex{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin-top: 100px;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start​;
     align-content: flex-start​;
+    
     
 }
 
@@ -17,16 +19,19 @@
     position: relative;
     margin: 10px;
     border:1px solid #eee;
-    flex-basis: 20%;
+    flex-basis: 2%;
     height: auto;
-    box-shadow: 0px 2px 2px #ccc;
-    padding: 20px;
-    transform: scale(1);
-  
-  }
-.root img{
     width: 250px;
-    height: 250px;
+    box-shadow: 0px 2px 2px #ccc;
+    padding: 2px;
+    transform: scale(1);  
+  }
+
+
+
+.root img{
+    width: 170px;
+    height:150px;
     transition: all 1s
 }
 .root:hover span.binIcon{
@@ -54,16 +59,41 @@ span.binIcon:hover i{
     
     transform: scale(1.1)
 }
-  .pFooter{
+.pFooter{
       display: flex;
       height: 10vh;
       justify-content: space-between
 ​
   }
-  .pFooter p {
+.pFooter p {
       font-size: 20px;
       letter-spacing: 2px;
       font-weight: bold;
       font-variant:small-caps;
       color: grey
   }
+
+  .info {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: auto;
+    width: 1000px;
+    padding: 2px;
+  }
+
+.info img{
+    width: 40%;    
+}
+
+.info h1{
+    color: #454177;    
+    text-align: center;
+    font-size: 40px;
+}
+.info h3{  
+    color: #333059;
+    font-size: 30px;
+}
